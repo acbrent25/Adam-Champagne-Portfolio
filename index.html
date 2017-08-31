@@ -13,7 +13,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Hind:400,700|Montserrat:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500|Oswald:400,700" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- jQuery UI Base CSS -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 	<!-- Custom Styles -->
 	<link rel="stylesheet" href="assets/css/custom.css">
@@ -43,7 +49,12 @@
 							<li><a href="#skills">Skills</a></li>
 							<li><a href="#portfolio">Portfolio</a></li>
 							<li><a href="#footer">Contact</a></li>
+							<li id="nav-seperator">|</li>
+							<li><a href="https://www.linkedin.com/in/adam-champagne/" class="social-icons" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+							<li><a href="https://github.com/acbrent25/" class="social-icons" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+							<li><a href="mailto:adamchampagne@gmail.com" class="social-icons" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>							
 						</ul>
+
 					</div><!--./ navbar-collapse -->
 				</div><!--./ container  -->
 			</div><!--./ navbar  -->
@@ -56,16 +67,15 @@
 <div class="container-fluid">
 	<div class="row">
 		<div id="hero" class="jumbotron text-center">
-				<div class="row">
-					<div class="col-sm-2 col-sm-offset-5 col-xs-8 col-xs-offset-2">
+				<div class="row">				
+					<div class="col-sm-2 col-sm-offset-5 col-xs-12">
 						<img src="assets/img/adamchampagne-profile.jpg" id="mugshot" class="img-responsive img-circle"  alt="">
-
 					</div>
-
+					<div class="col-sm-8 col-sm-offset-2">
+							<h1>Welcome!</h1>
+							<p>As a graphic designer and web developer for more than 10 years, I has worked with national standup paddling brands and many local small businesses including four, top-50 restaurants.</p>
+					</div>
 				</div>
-			<h1>Welcome!</h1>
-			<p>My name is Adam Champagne and I am a Full Stack Web Developer</p>
-			<!-- <p><a class="btn btn-danger btn-lg" href="#" role="button">Learn more</a></p> -->
 		</div><!--./ jumbotron  -->
 	</div><!--./ row  -->
 </div>
@@ -75,7 +85,7 @@
 <section id="about">
 	
 	<div class="container">
-		<div class="row text-center">
+		<div class="row">
 			
 			<div class="col-md-8 col-md-offset-2">
 
@@ -264,103 +274,134 @@
 	<!-- PORTFOLIO
 	================================================== -->
 
-	<section class="works" id="works">
+	<section id="portfolio">
+	
 		<div class="container">
-			
-			<!-- SECTION HEADER -->
-			<div class="section-header">
-				
-				<!-- SECTION TITLE -->
-				<h2 class="dark-text">Portfolio</h2>
-				
-				<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
-				<h6>
-					We have designed and developed many awesome products. Just take a look. 
-				</h6>
+
+			<div class="row">
+				<h2>Portfolio</h2>
 			</div>
-			<!-- / END SECTION HEADER -->
-			<div class="row projects">
-			<div id="loader">
-				<div class="loader-icon"></div>
-			</div>
-			<div class="col-md-12" id="portfolio-list">
-				<!-- PORTFOLIO ITEMS-->
-				<ul class="cbp-rfgrid">
-				
-				<!-- PROJECT -->	
-				<li class="wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-				<a href="project.html" class="more"><img src="assets/img/common-lot-homepage-1.jpg"  alt="project"/>
-					<div class="project-info">
-						<div class="project-details">
-							<h5 class="white-text red-border-bottom">
-							Project Title </h5>
-							<div class="details white-text">
-								Web Design
-							</div>
+			<div class="row">
+
+				<div id="tabs">
+						<ul>
+						<li><a href="#tabs-1">Web Development</a></li>
+						<li><a href="#tabs-2">Web Apps</a></li>
+						<li><a href="#tabs-3">Print Design</a></li>
+						</ul>
+						<div id="tabs-1">
+								<div class="col-md-4">
+									<div class="portfolioImg">
+										<img src="assets/img/portfolio-1.jpg" alt="">
+									</div>	
+								</div><!--/ col -->
+
+								<div class="col-md-4">
+									<div class="portfolioImg">
+										<img src="assets/img/portfolio-1.jpg" alt="">
+									</div>	
+								</div><!--/ col -->
+								<div class="col-md-4">
+									<div class="portfolioImg">
+										<img src="assets/img/portfolio-1.jpg" alt="">
+									</div>	
+								</div><!--/ col -->
+								<div class="col-md-4">
+									<div class="portfolioImg">
+										<img src="assets/img/portfolio-1.jpg" alt="">
+									</div>	
+								</div><!--/ col -->
+								<div class="col-md-4">
+									<div class="portfolioImg">
+										<img src="assets/img/portfolio-1.jpg" alt="">
+									</div>	
+								</div><!--/ col -->
+								<div class="col-md-4">
+									<div class="portfolioImg">
+										<img src="assets/img/portfolio-1.jpg" alt="">
+									</div>	
+								</div><!--/ col -->
 						</div>
-					</div>
-					</a>
-				</li>
-				<!-- / PROJECT -->
-				
-				<!-- PROJECT -->	
-				<li class="wow fadeInDown animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-				<a href="project.html" class="more"><img src="assets/img/elements-homepage.jpg" alt="project" />
-					<div class="project-info">
-						<div class="project-details">
-							<h5 class="white-text red-border-bottom">
-							Project Title </h5>
-							<div class="details white-text">
-								Web Design
+						<div id="tabs-2">
+								<div class="col-md-4">
+										<div class="portfolioImg">
+											<img src="assets/img/portfolio-1.jpg" alt="">
+										</div>	
+									</div><!--/ col -->
+	
+									<div class="col-md-4">
+										<div class="portfolioImg">
+											<img src="assets/img/portfolio-1.jpg" alt="">
+										</div>	
+									</div><!--/ col -->
+									<div class="col-md-4">
+										<div class="portfolioImg">
+											<img src="assets/img/portfolio-1.jpg" alt="">
+										</div>	
+									</div><!--/ col -->
+									<div class="col-md-4">
+										<div class="portfolioImg">
+											<img src="assets/img/portfolio-1.jpg" alt="">
+										</div>	
+									</div><!--/ col -->
+									<div class="col-md-4">
+										<div class="portfolioImg">
+											<img src="assets/img/portfolio-1.jpg" alt="">
+										</div>	
+									</div><!--/ col -->
+									<div class="col-md-4">
+										<div class="portfolioImg">
+											<img src="assets/img/portfolio-1.jpg" alt="">
+										</div>	
+									</div><!--/ col -->
 							</div>
-						</div>
-					</div>
-					</a>
-				</li>
-				<!-- / PROJECT -->
+						<div id="tabs-3">
+								<div class="col-md-4">
+										<div class="portfolioImg">
+											<img src="assets/img/portfolio-1.jpg" alt="">
+										</div>	
+									</div><!--/ col -->
+	
+									<div class="col-md-4">
+										<div class="portfolioImg">
+											<img src="assets/img/portfolio-1.jpg" alt="">
+										</div>	
+									</div><!--/ col -->
+									<div class="col-md-4">
+										<div class="portfolioImg">
+											<img src="assets/img/portfolio-1.jpg" alt="">
+										</div>	
+									</div><!--/ col -->
+									<div class="col-md-4">
+										<div class="portfolioImg">
+											<img src="assets/img/portfolio-1.jpg" alt="">
+										</div>	
+									</div><!--/ col -->
+									<div class="col-md-4">
+										<div class="portfolioImg">
+											<img src="assets/img/portfolio-1.jpg" alt="">
+										</div>	
+									</div><!--/ col -->
+									<div class="col-md-4">
+										<div class="portfolioImg">
+											<img src="assets/img/portfolio-1.jpg" alt="">
+										</div>	
+									</div><!--/ col -->
+							</div>
+					</div><!--/ tabs -->
+				   
+
+
+
+
+			</div><!--/ row -->
 		
-				<!-- PROJECT -->	
-				<li class="wow fadeInDown animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-				<a href="project.html" class="more"><img src="assets/img/mistral-homepage.jpg"  alt="project"/>
-					<div class="project-info">
-						<div class="project-details">
-							<h5 class="white-text red-border-bottom">
-							Project Title </h5>
-							<div class="details white-text">
-								Web Design
-							</div>
-						</div>
-					</div>
-					</a>
-				</li>
-				<!-- / PROJECT -->
-				
-				<!-- PROJECT -->	
-				<li class="wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-				<a href="project.html" class="more"><img src="assets/img/viaggio-homepage.jpg"  alt="project"/>
-					<div class="project-info">
-						<div class="project-details">
-							<h5 class="white-text red-border-bottom">
-							Project Title </h5>
-							<div class="details white-text">
-								Web Design
-							</div>
-						</div>
-					</div>
-					</a>
-				</li>
-				<!-- / PROJECT -->
-				
-			<!-- END OF PORTFOLIO ITEMS-->
-		</div>
-			
-			<!-- PROJECT DETAILS WILL BE LOADED HERE -->
-			<div id="loaded-content"></div>
+		</div><!--/ container -->
 		
-			<a id="back-button" class="red-btn" href="#"><i class="icon-fontawesome-webfont-27"></i> Go Back</a>
+	</section><!--/ portfolio -->
+
 			
-		</div> <!-- / END CONTAINER -->
-		</section> <!-- / END WORKS SECTION -->
+
 
 	<!-- REFERENCES
 	================================================== -->
@@ -388,7 +429,7 @@
 
 	</section>
 
-	<!-- CONTACT
+	<!-- FOOTER
 	================================================== -->
 
 	<section id="footer">
@@ -429,13 +470,50 @@
 
 	</section>
 
+	<!-- FOOTER NAV
+	================================================== -->
+
+		<section id="footer-nav">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+							<p id="copyright"><a href="#">&copy;adamchampagne.com</a></p>
+					</div>
+					<div class="col-sm-8">
+							<ul class="nav navbar-nav navbar-right">
+									<li><a href="https://www.linkedin.com/in/adam-champagne/" class="social-icons" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+									<li><a href="https://github.com/acbrent25/" class="social-icons" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+									<li><a href="mailto:adamchampagne@gmail.com" class="social-icons" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>							
+							</ul>
+			
+
+					</div>
+				</div>
+			</div>
+
+				
+
+				
+			
+		</section><!--./ section -->
+
 
 
 
 <!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<!-- jQuery UI -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
 <!-- Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<!-- Custom Javascript -->
+<script src="assets/js/app.js"></script>
+
+
 </body>
 </html>
