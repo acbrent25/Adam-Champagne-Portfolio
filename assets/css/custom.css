@@ -1,0 +1,359 @@
+
+
+/* ==== GLOBAL ==== */
+
+body {
+	margin-top: 50px;
+	font-family: 'Hind', sans-serif;
+	font-size: 16px;
+}
+
+
+img {
+	width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+.navbar {
+    background: #fff;
+}
+
+a.navbar-brand {
+	font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.navbar-brand:hover {
+    color: #dd3333;
+}
+
+.nav a {
+	color: #333;
+}
+
+.nav a:hover {
+	color: #dd3333;
+}
+
+
+.table {
+	display: table;
+	height: 100%;
+}
+
+.table-cell {
+	display: table-cell;
+  	vertical-align: middle;
+	float: none;
+}
+
+section {
+	padding: 40px 0;
+}
+
+
+
+
+/********************************
+		HERO SECTION
+********************************/
+
+.container-fluid .jumbotron {
+    border-radius: 0;
+}
+
+#hero {
+	background: url('../img/hero-bg.jpg') no-repeat;
+	color: #fff;
+	background-size: cover;
+}
+
+
+ #mugshot {	
+	border: 2px solid #fff;
+} 
+
+/********************************
+		ABOUT SECTION
+********************************/
+
+section#about {
+    padding-top: 0;
+}
+
+/********************************
+		SKILLS SECTION
+********************************/
+
+section#skills {
+	background-color: #ddd;
+}
+
+h5.progress-label {
+    /* display: block; */
+    margin: 0 10px 0 0;
+    padding-top: 0;
+	line-height: 20px;
+
+}
+
+#skills-row {
+	margin-top: 20px;
+}
+
+
+/*---------------------------------------
+ **   SECTION:  PORTFOLIO          -----
+-----------------------------------------*/
+
+.works {
+	padding-bottom: 100px;
+	background: #FFFFFF;
+	min-height: 800px;
+}
+
+/* IMAGE GRID */
+.cbp-rfgrid {
+	margin: auto;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+.cbp-rfgrid li {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 25%; /* Fallback */
+width: -webkit-calc(100% / 4);
+	width: calc(100% / 4);
+	-webkit-transition: 0.4s all linear;
+	        transition: 0.4s all linear;
+}
+.cbp-rfgrid li a,.cbp-rfgrid li a img {
+	display: block;
+	max-width: 100%;
+	-webkit-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	        transform: scale(1,1);
+	-webkit-transition-timing-function: ease-in;
+	        transition-timing-function: ease-in;
+	-webkit-transition-duration: 250ms;
+	        transition-duration: 250ms;
+	cursor: pointer;
+	-webkit-transition: 0.4s all linear;
+	        transition: 0.4s all linear;
+}
+.cbp-rfgrid li a:hover img {
+	-webkit-transform: scale(1.05,1.07);
+	-ms-transform: scale(1.05,1.07);
+	        transform: scale(1.05,1.07);
+	-webkit-transition-timing-function: ease-out;
+	        transition-timing-function: ease-out;
+	-webkit-transition-duration: 250ms;
+	        transition-duration: 250ms;
+}
+
+/* Flexbox is used for centering the heading */
+.cbp-rfgrid li a .project-info {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	background: rgba(0,0,0,0.5);
+	padding-top: 25%;
+	text-align: center;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: all ease .25s;
+	        transition: all ease .25s;
+}
+.cbp-rfgrid li a .project-info .project-details {
+	position: relative;
+	top: -29px;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: all ease .25s;
+	        transition: all ease .25s;
+	width: 100%;
+}
+.cbp-rfgrid li a .project-info h5 {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.cbp-rfgrid li a:hover .project-info {
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.cbp-rfgrid li a:hover .project-details {
+	filter: alpha(opacity=100);
+	opacity: 1;
+	top: 0;
+}
+.cbp-rfgrid li a:hover .button {
+	filter: alpha(opacity=100);
+	opacity: 1;
+	bottom: -50px;
+}
+
+/* media queries:  change number of items per row */
+@media screen and (max-width: 1190px) {
+	.cbp-rfgrid li {
+	width: 25%; /* Fallback */
+width: -webkit-calc(100% / 4);
+	width: calc(100% / 4);
+}
+}
+@media screen and (max-width: 1024px) {
+	.cbp-rfgrid li {
+	width: 33.33333333333333%; /* Fallback */
+width: -webkit-calc(100% / 3);
+	width: calc(100% / 3);
+}
+}
+@media screen and (max-width: 768px) {
+	.cbp-rfgrid li {
+	width: 50%; /* Fallback */
+width: -webkit-calc(100% / 2);
+	width: calc(100% / 2);
+}
+}
+@media screen and (max-width: 480px) {
+	.cbp-rfgrid li {
+	width: 100%;
+}
+}
+@media screen and (max-width: 300px) {
+	.cbp-rfgrid li {
+	width: 100%;
+}
+}
+
+/* PROJECT DETAILS LOADER */
+#back-button {
+	display: none;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 13px 35px 13px 35px;
+	border-radius: 4px;
+	margin: 10px;
+}
+#back-button i {
+	margin-right: 10px;
+}
+#loader {
+	min-height: 930px;
+	position: relative;
+	display: none;
+}
+#loader .loader-icon {
+	background: url(../images/loading.gif) no-repeat center center;
+	background-color: #FFF;
+	margin: -22px -22px;
+	top: 50%;
+	left: 50%;
+	z-index: 10000;
+	position: fixed;
+	width: 44px;
+	height: 44px;
+	-webkit-background-size: 30px 30px;
+	        background-size: 30px 30px;
+	border-radius: 5px;
+}
+
+/********************************
+		REFERENCES SECTION
+********************************/
+
+#references {
+	background-color: #ddb333;
+}
+
+#references .row {
+    padding: 100px 0;
+}
+
+/* BLOCKQOUTE  */
+
+blockquote {
+	border-left: none;
+	
+}
+
+i.fa.fa-quote-left {
+    float: left;
+    font-size: 60px;
+	margin: 20px 10px 20px 0;
+	color: #fff;
+}
+
+blockquote footer {
+	text-align: right;
+	color: #333;
+}
+
+#underline {
+	border-bottom: 1px solid #333;
+	width: 50%;
+	margin-left: 50%;
+	margin-bottom: 15px;
+}
+
+/********************************
+		FOOTER SECTION
+********************************/
+
+#footer {
+	background-color: #333;
+}
+
+#footer label {
+	color: #fff;
+}
+
+#footer p {
+	color: #fff;
+	margin-top: 20px;
+}
+
+
+
+
+/********************************
+		MEDIA QUERIES
+********************************/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+
+
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { 
+
+ }
