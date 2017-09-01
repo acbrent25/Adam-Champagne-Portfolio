@@ -24,7 +24,9 @@ h1,h2,h3,h4,h5,h6 {
 	text-transform: uppercase;
 }
 
-
+/********************************
+		NAVIGATION
+********************************/
 .navbar {
 	background: #fff;
 	font-family: 'Oswald', sans-serif;
@@ -76,6 +78,11 @@ li#nav-seperator {
 
 .nav>li>a:hover {
     background-color: #fff;
+}
+
+.nav>li {
+    position: relative;
+    display: inline-block;
 }
 
 
