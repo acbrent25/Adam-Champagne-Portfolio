@@ -14,10 +14,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,500|Oswald:400,700" rel="stylesheet">
-
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,500|Raleway:900" rel="stylesheet">
 	
 	<!-- jQuery UI Base CSS -->
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -61,8 +58,8 @@
 							<li><a href="#portfolio">Portfolio</a></li>
 							<li><a href="#footer">Contact</a></li>
 							<li id="nav-seperator">|</li>
-							<li><a href="https://www.linkedin.com/in/adam-champagne/" class="social-icons" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a href="https://github.com/acbrent25/" class="social-icons" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+							<li><a href="https://github.com/acbrent25/" class="social-icons" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/adam-champagne/" class="social-icons" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
 							<li><a href="mailto:adamchampagne@gmail.com" class="social-icons" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>							
 						</ul>
 
@@ -83,8 +80,7 @@
 						<img src="assets/img/adamchampagne-profile.jpg" id="mugshot" class="img-responsive img-circle"  alt="">
 					</div>
 					<div class="col-sm-8 col-sm-offset-2">
-							<h1>Welcome!</h1>
-							<p>As a graphic designer and web developer for more than 10 years, I have worked with national standup paddling brands and many local small businesses including four, top-50 restaurants.</p>
+							<p>As a graphic designer and web developer for more than 10 years, I have worked with national standup paddling brands and many local small businesses including four, top-25 restaurants.</p>
 					</div>
 				</div>
 		</div><!--./ jumbotron  -->
@@ -98,12 +94,12 @@
 	<div class="container">
 		<div class="row">
 			
-			<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-8 col-md-offset-2 text-center">
 
 				<h2>About Me</h2>
 				<p>Full stack web developer, multimedia designer, and marketing professional with a range of experience including project conceptualization, print and web design, front and backend development, project management, excellent organizational, leadership, problem-solving and communication skills.</p>
 
-				<p>Experienced in HTML5, CSS3, Javascript, JQuery, Bootstrap, PHP, Wordpress Theme Development, Website Design and SEO. Additionally, extensive PPC marketing experience with Google Adwords and Facebook’s advertising platform. </p>
+				<!-- <p>Experienced in HTML5, CSS3, Javascript, JQuery, Bootstrap, PHP, Wordpress Theme Development, Website Design and SEO. Additionally, extensive PPC marketing experience with Google Adwords and Facebook’s advertising platform. </p> -->
 
 			</div><!-- / . col-sm-6 -->
 
@@ -123,7 +119,7 @@
 	<section id="skills">
 
 		<div class="container">
-			<h2>Skills</h2>
+			<h2 class="text-center">Skills</h2>
 			<div id="skills-row" class="row">				
 				<div class="col-sm-6">
 
@@ -162,7 +158,7 @@
 						
 						<div class="col-xs-8">
 							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
 									<span class="sr-only">100% Complete (success)</span>
 									
 								</div><!--/. progress-bar -->
@@ -287,29 +283,77 @@
 	<section id="portfolio">
 	
 		<div class="container">
-			<h2>Portfolio</h2>
+			<h2 class="text-center">Portfolio</h2>
 
 			<div class="row">
 
-				<div id="tabs">
+				<div id="tabs" class="text-center">
 						<ul>
-						<li><a href="#tabs-1" class="animate bounce">Web Development</a></li>
-						<li><a href="#tabs-2">Web Apps</a></li>
-						<li><a href="#tabs-3">Print Design</a></li>
+						<li><a href="#web-dev-tab" class="animate bounce">Web Development</a></li>
+						<li><a href="#web-apps-tab">Web Apps</a></li>
+						<li><a href="#print-tab">Print Design</a></li>
 						</ul>
-						<div id="tabs-1">
+						
+						<!-- WEB DEV TAB
+						================================================== -->
+						<div id="web-dev-tab">
 								<div class="col-md-4 col-sm-6">
 									<div class="portfolioImg">
-										<a href="assets/img/common-lot-homepage-full.jpg" data-fancybox data-caption="Common Lot Restaurant | Website Design and Development">
-											<img src="assets/img/common-lot-homepage-1.jpg" alt="Common Lot Restaurant Website Design">
+										<!-- Modal Trigger -->
+										<a href="assets/img/commonlot/common-lot-homepage-full.jpg" data-toggle="modal" data-target="#commonModal">
+											<img src="assets/img/commonlot/common-lot-homepage-1.jpg" alt="Common Lot Restaurant Website Design">
+											
+											<div class="overlay">
+												<div class="content text-center">
+													<h2>Common Lot</h2>
+													<p>Website Design and Development</p>
+												</div>
+											</div>
 										</a>
-										
+									<!-- Modal -->
+										<div class="modal fade" id="commonModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											<div class="vertical-alignment-helper">
+												<div class="modal-dialog modal-lg vertical-align-center" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														<h4 class="modal-title" id="myModalLabel">Common Lot Restaurant, Millburn, NJ</h4>
+														</div><!--/ modal-header -->
+														<div class="modal-body">
+															<div class="row">
+																<div class="col-md-8">
+																		<img src="assets/img/commonlot/common-responsive.jpg" alt="Common Lot Restaurant Website Design">
+																</div><!--/ col -->
+																<div class="col-md-4 text-left">
+																	<p>The owners of Common Lot are a young and talented couple with a commitment to sophisticated, relaxed cooking and great service at their Millburn Restaurant. They approached me after seeing some work I did for Elements and Mistral restaurant looking for a complete website design and build.</p>
+																	<p>Link: <a href="http://commonlot.com/" alt="common lot restaurant" target="_blank">commonlot.com</a></p>	
+																</div><!--/ col -->
+															</div><!--/ row -->
+															<div class="row">
+
+															</div>
+														</div><!--/ modal-body -->
+														<div class="modal-footer">
+														<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														<button type="button" class="btn btn-primary">Save changes</button> -->
+														</div><!--/ modal-footer -->
+													</div><!--/ modal-content -->
+												</div><!--/ modal-dialog modal-lg -->
+										  </div><!--/ modal -->
+										</div><!--/ modal-helper -->
 									</div>	
 								</div><!--/ col -->
+
 								<div class="col-md-4 col-sm-6">
 									<div class="portfolioImg">
 										<a href="assets/img/elements-homepage-full.jpg" data-fancybox data-caption="Elements Restaurant | Website Design and Development">
 											<img src="assets/img/elements-homepage.jpg" alt="Elements Restaurant Website Design">
+											<div class="overlay">
+												<div class="content text-center">
+													<h2>Elements</h2>
+													<p>Website Design and Development</p>
+												</div>
+											</div>
 										</a>
 										
 									</div>	
@@ -318,6 +362,12 @@
 										<div class="portfolioImg">
 											<a href="assets/img/mistral-homepage-full.jpg" data-fancybox data-caption="Mistral Restaurant | Website Design and Development">
 												<img src="assets/img/mistral-homepage.jpg" alt="Mistral Restaurant Website Design">
+												<div class="overlay">
+													<div class="content text-center">
+														<h2>Mistral</h2>
+														<p>Website Design and Development</p>
+													</div>
+												</div>
 											</a>
 											
 										</div>	
@@ -326,6 +376,12 @@
 										<div class="portfolioImg">
 											<a href="assets/img/battello-homepage-full.jpg" data-fancybox data-caption="My caption">
 												<img src="assets/img/battello-homepage.jpg" alt="">
+												<div class="overlay">
+													<div class="content text-center">
+														<h2>Battello</h2>
+														<p>Website Design and Development</p>
+													</div>
+												</div>
 											</a>
 											
 										</div>	
@@ -334,6 +390,12 @@
 										<div class="portfolioImg">
 											<a href="assets/img/viaggio-homepage-full.jpg" data-fancybox data-caption="My caption">
 												<img src="assets/img/viaggio-homepage.jpg" alt="">
+												<div class="overlay">
+													<div class="content text-center">
+														<h2>Viaggio</h2>
+														<p>Website Design and Development</p>
+													</div>
+												</div>
 											</a>
 											
 										</div>	
@@ -342,18 +404,511 @@
 										<div class="portfolioImg">
 											<a href="assets/img/kypad-homepage-full.jpg" data-fancybox data-caption="My caption">
 												<img src="assets/img/kypad-homepage.jpg" alt="">
+												<div class="overlay">
+													<div class="content text-center">
+														<h2>Kypad</h2>
+														<p>Website Design and Development</p>
+													</div>
+												</div>
 											</a>
 											
 										</div>	
 								</div><!--/ col -->
 						</div><!--/ tabs-1 -->
-						<div id="tabs-2">
 
+						<!-- WEB APPS TAB
+						================================================== -->
+						<div id="web-apps-tab">
+
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/webapps/drumkit.jpg" data-toggle="modal" data-target="#drumKitModal">
+										<img src="assets/img/webapps/drumkit.jpg" alt="keybord drumkit">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2>Keyboard Drumkit</h2>
+												<p></p>
+											</div>
+										</div>
+									</a>
+								<!-- Modal -->
+									<div class="modal fade" id="drumKitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+										<div class="vertical-alignment-helper">
+											<div class="modal-dialog modal-lg vertical-align-center" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+													<h4 class="modal-title" id="myModalLabel">Keyboard Drumkit</h4>
+													</div><!--/ modal-header -->
+													<div class="modal-body">
+														<div class="row">
+															<div class="col-md-8">
+																	<img src="assets/img/webapps/drumkit.jpg" alt="Common Lot Restaurant Website Design">
+															</div><!--/ col -->
+															<div class="col-md-4 text-left">
+																<p>A fun little app that lets you play the drums with your keyboard!</p>
+																<p>Technologies Used:</p>
+																<ul>
+																	<li>HTML</li>
+																	<li>CSS</li>
+																	<li>Javascript</li>
+																</ul>
+																<p>Link: <a href="http://adamchampagne.com/drumkit/" alt="Keyboard Drumkit" target="_blank">Keyboard Drumkit</a></p>	
+															</div><!--/ col -->
+														</div><!--/ row -->
+														<div class="row">
+
+														</div>
+													</div><!--/ modal-body -->
+													<div class="modal-footer">
+													</div><!--/ modal-footer -->
+												</div><!--/ modal-content -->
+											</div><!--/ modal-dialog modal-lg -->
+									  </div><!--/ modal -->
+									</div><!--/ modal-helper -->
+								</div>	
+							</div><!--/ col -->
+
+							<div class="col-md-4 col-sm-6">
+									<div class="portfolioImg">
+										<!-- Modal Trigger -->
+										<a href="assets/img/webapps/crystal-collector.jpg" data-toggle="modal" data-target="#crystal-collectorModal">
+											<img src="assets/img/webapps/crystal-collector.jpg" alt="keybord crystal-collector">
+											
+											<div class="overlay">
+												<div class="content text-center">
+													<h2>Crystal Collector Game</h2>
+													<p></p>
+												</div>
+											</div>
+										</a>
+									<!-- Modal -->
+										<div class="modal fade" id="crystal-collectorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											<div class="vertical-alignment-helper">
+												<div class="modal-dialog modal-lg vertical-align-center" role="document">
+													<div class="modal-content">
+														<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														<h4 class="modal-title" id="myModalLabel">Crystal Collector Game</h4>
+														</div><!--/ modal-header -->
+														<div class="modal-body">
+															<div class="row">
+																<div class="col-md-8">
+																		<img src="assets/img/webapps/crystal-collector.jpg" alt="Common Lot Restaurant Website Design">
+																</div><!--/ col -->
+																<div class="col-md-4 text-left">
+																	<p>My second ever game which generates a random target number and random crystal values on game load. Your job is to click the crystals and use math to hit the target number without going over.</p>
+																	<p>Technologies Used:</p>
+																	<ul>
+																		<li>HTML</li>
+																		<li>Bootstrap</li>
+																		<li>CSS</li>
+																		<li>Javascript</li>
+																		<li>jQuery</li>
+																	</ul>
+																	<p>Link: <a href="http://adamchampagne.com/crystal-collector/" alt="Crystal Collector Game" target="_blank">Crystal Collector Game</a></p>	
+																</div><!--/ col -->
+															</div><!--/ row -->
+															<div class="row">
+	
+															</div>
+														</div><!--/ modal-body -->
+														<div class="modal-footer">
+														</div><!--/ modal-footer -->
+													</div><!--/ modal-content -->
+												</div><!--/ modal-dialog modal-lg -->
+										  </div><!--/ modal -->
+										</div><!--/ modal-helper -->
+									</div>	
+								</div><!--/ col -->
+
+								<div class="col-md-4 col-sm-6">
+										<div class="portfolioImg">
+											<!-- Modal Trigger -->
+											<a href="assets/img/webapps/javascript-clock.jpg" data-toggle="modal" data-target="#javascript-clockModal">
+												<img src="assets/img/webapps/javascript-clock.jpg" alt="keybord javascript-clock">
+												
+												<div class="overlay">
+													<div class="content text-center">
+														<h2>Javascript Clock App Game</h2>
+														<p></p>
+													</div>
+												</div>
+											</a>
+										<!-- Modal -->
+											<div class="modal fade" id="javascript-clockModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+												<div class="vertical-alignment-helper">
+													<div class="modal-dialog modal-lg vertical-align-center" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+															<h4 class="modal-title" id="myModalLabel">Javascript Clock App</h4>
+															</div><!--/ modal-header -->
+															<div class="modal-body">
+																<div class="row">
+																	<div class="col-md-8">
+																			<img src="assets/img/webapps/javascript-clock.jpg" alt="Common Lot Restaurant Website Design">
+																	</div><!--/ col -->
+																	<div class="col-md-4 text-left">
+																		<p>A real time clock using vanilla Javascript and HTML</p>
+																		<p>Technologies Used:</p>
+																		<ul>
+																			<li>HTML</li>
+																			<li>Javascript</li>
+																		</ul>
+																		<p>Link: <a href="http://adamchampagne.com/javascript-clock/clock.html" alt="Javascript Clock App" target="_blank">Javascript Clock App</a></p>	
+																	</div><!--/ col -->
+																</div><!--/ row -->
+																<div class="row">
+		
+																</div>
+															</div><!--/ modal-body -->
+															<div class="modal-footer">
+															</div><!--/ modal-footer -->
+														</div><!--/ modal-content -->
+													</div><!--/ modal-dialog modal-lg -->
+											  </div><!--/ modal -->
+											</div><!--/ modal-helper -->
+										</div>	
+									</div><!--/ col -->
+
+									<div class="col-md-4 col-sm-6">
+											<div class="portfolioImg">
+												<!-- Modal Trigger -->
+												<a href="assets/img/webapps/starwars-rpg.jpg" data-toggle="modal" data-target="#starwars-rpgModal">
+													<img src="assets/img/webapps/starwars-rpg.jpg" alt="Starwars RPG">
+													
+													<div class="overlay">
+														<div class="content text-center">
+															<h2>Starwars RPG Game</h2>
+															<p></p>
+														</div>
+													</div>
+												</a>
+											<!-- Modal -->
+												<div class="modal fade" id="starwars-rpgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+													<div class="vertical-alignment-helper">
+														<div class="modal-dialog modal-lg vertical-align-center" role="document">
+															<div class="modal-content">
+																<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="myModalLabel">Star Wars RPG Game</h4>
+																</div><!--/ modal-header -->
+																<div class="modal-body">
+																	<div class="row">
+																		<div class="col-md-8">
+																				<img src="assets/img/webapps/starwars-rpg.jpg" alt="Common Lot Restaurant Website Design">
+																		</div><!--/ col -->
+																		<div class="col-md-4 text-left">
+																			<p>My first RPG game based on Star Wars.  It's a very simple game where you can pick your charachter and your enemy and do battle. If you win you can fight another enemy. The goal is to eleminate all enemies! </p>
+																			<p>Technologies Used:</p>
+																			<ul>
+																				<li>HTML</li>
+																				<li>CSS</li>
+																				<li>Bootstrap</li>
+																				<li>Javascript</li>
+																				<li>jQuery</li>
+																			</ul>
+																			<p>Link: <a href="http://adamchampagne.com/starwars-rpg/" alt="Starwars RPG Game" target="_blank">Starwars RPG Game</a></p>	
+																		</div><!--/ col -->
+																	</div><!--/ row -->
+																	<div class="row">
+			
+																	</div>
+																</div><!--/ modal-body -->
+																<div class="modal-footer">
+																</div><!--/ modal-footer -->
+															</div><!--/ modal-content -->
+														</div><!--/ modal-dialog modal-lg -->
+												  </div><!--/ modal -->
+												</div><!--/ modal-helper -->
+											</div>	
+										</div><!--/ col -->
+
+										<div class="col-md-4 col-sm-6">
+												<div class="portfolioImg">
+													<!-- Modal Trigger -->
+													<a href="assets/img/webapps/giphy-search.jpg" data-toggle="modal" data-target="#giphy-searchModal">
+														<img src="assets/img/webapps/giphy-search.jpg" alt="Giphy Search">
+												
+														<div class="overlay">
+															<div class="content text-center">
+																<h2>Giphy Search</h2>
+																<p></p>
+															</div>
+														</div>
+													</a>
+												<!-- Modal -->
+													<div class="modal fade" id="giphy-searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+														<div class="vertical-alignment-helper">
+															<div class="modal-dialog modal-lg vertical-align-center" role="document">
+																<div class="modal-content">
+																	<div class="modal-header">
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																	<h4 class="modal-title" id="myModalLabel">Giphy Search</h4>
+																	</div><!--/ modal-header -->
+																	<div class="modal-body">
+																		<div class="row">
+																			<div class="col-md-8">
+																					<img src="assets/img/webapps/giphy-search.jpg" alt="Common Lot Restaurant Website Design">
+																			</div><!--/ col -->
+																			<div class="col-md-4 text-left">
+																				<p>This app uses the Giphy API to search for movies (or any gif for that matter) based on the users query. Once a user enters their search a new button will appear. You can click the button to populate the screen with 10 gifs. When you click on the gifs they will play and pause.</p>
+																				<p>Technologies Used:</p>
+																				<ul>
+																					<li>HTML</li>
+																					<li>CSS</li>
+																					<li>Bootstrap</li>
+																					<li>Javascript</li>
+																					<li>jQuery</li>
+																					<li>Giphy API</li>
+																					<li>Ajax</li>
+																				</ul>
+																				<p>Link: <a href="http://adamchampagne.com/giphy-search/" alt="Giphy Search" target="_blank">Giphy Search</a></p>	
+																			</div><!--/ col -->
+																		</div><!--/ row -->
+																		<div class="row">
+				
+																		</div>
+																	</div><!--/ modal-body -->
+																	<div class="modal-footer">
+																	</div><!--/ modal-footer -->
+																</div><!--/ modal-content -->
+															</div><!--/ modal-dialog modal-lg -->
+													  </div><!--/ modal -->
+													</div><!--/ modal-helper -->
+												</div>	
+											</div><!--/ col -->
 							
-							</div><!--/ tabs-2 -->
-						<div id="tabs-3">
+						
+							
+						</div><!--/ web-apps-tab -->
+						
+						<!-- PRINT DESIGN TAB
+						================================================== -->
+						<div id="print-tab">
+							
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-1.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-1.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->		
+							</div><!--/ col -->
 
-							</div><!--/ tabs-3 -->
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-2.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-2.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-3.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-3.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-4.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-4.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-5.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-5.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-6.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-6.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-7.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-7.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-8.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-8.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-9.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-9.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-10.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-10.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-11.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-11.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-12.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-12.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-13.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-13.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+							<div class="col-md-4 col-sm-6">
+								<div class="portfolioImg">
+									<!-- Modal Trigger -->
+									<a href="assets/img/print/standupjournal-14.jpg" data-fancybox data-caption="">
+										<img src="assets/img/print/standupjournal-14.jpg" alt="Stanup Journal Magazine">
+										
+										<div class="overlay">
+											<div class="content text-center">
+												<h2></h2>
+												<p></p>
+											</div>
+										</div><!--/ overlay -->	
+									</a>
+								</div><!--/ portfolioImg -->	
+							</div><!--/ col -->
+
+
+						</div><!--/ print-tab -->
+
 					</div><!--/ tabs -->
 				   
 
@@ -455,7 +1010,7 @@
 				</div><!--/. col-sm-6 -->
 				
 					<div class="col-sm-6">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24199.034681080168!2d-74.42293251042871!3d40.69865507083285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b01dc2fe3b2f%3A0xd42507dce89667b1!2sNew+Providence%2C+NJ!5e0!3m2!1sen!2sus!4v1504269040565" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>					</div><!--/. col-sm-6 -->
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24199.034681080168!2d-74.42293251042871!3d40.69865507083285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b01dc2fe3b2f%3A0xd42507dce89667b1!2sNew+Providence%2C+NJ!5e0!3m2!1sen!2sus!4v1504269040565" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>					</div><!--/. col-sm-6 -->
 				
 			</div><!--/. row -->
 
@@ -475,8 +1030,8 @@
 					</div>
 					<div class="col-xs-8">
 							<ul class="list-inline text-right">
-								<li><a href="https://www.linkedin.com/in/adam-champagne/" class="social-icons" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-								<li><a href="https://github.com/acbrent25/" class="social-icons" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+								<li><a href="https://github.com/acbrent25/" class="social-icons" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/adam-champagne/" class="social-icons" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
 								<li><a href="mailto:adamchampagne@gmail.com" class="social-icons" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>							
 							</ul>
 					</div>
@@ -510,7 +1065,7 @@
 <!-- Custom Javascript -->
 <script src="assets/js/app.js"></script>
 <!-- Contact Form Validation -->
-<script src="contact.js"></script>
+<script src="validator.js"></script>
 <!-- Contact Form Send -->
 <script src="contact.js"></script>
 

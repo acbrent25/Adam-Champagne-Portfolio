@@ -12,14 +12,13 @@ $(document).ready(function() {
     });
 
     // call owl carousel
-
-    
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
         nav:true,
         singleItem: true,
         autoplay: true,
+        autoHeight:true,
         responsive:{
             0:{
                 items:1
