@@ -8,7 +8,7 @@ $(document).ready(function() {
     
       // set first one to active
     $( "#tabs" ).tabs({
-    active: 0
+        active: 0
     });
 
     // call owl carousel
@@ -17,7 +17,7 @@ $(document).ready(function() {
         margin:10,
         nav:true,
         singleItem: true,
-        autoplay: true,
+        autoplay: false,
         autoHeight:true,
         responsive:{
             0:{
@@ -30,7 +30,9 @@ $(document).ready(function() {
                 items:1
             }
         }
-    })
+    });
+
+    new WOW().init();
 
 
 }); // Document ready
