@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-    
     // initiate tabs
     $( function() {
         $( "#tabs" ).tabs();
@@ -10,6 +9,9 @@ $(document).ready(function() {
     $( "#tabs" ).tabs({
         active: 0
     });
+
+    // Hide email level
+    $('#email2').hide()
 
     // call owl carousel
     $('.owl-carousel').owlCarousel({
@@ -34,5 +36,12 @@ $(document).ready(function() {
 
     new WOW().init();
 
+/**************
+ * ANIMATION
+ *************/
+// var mugShot = $('#mugshot');
+// TweenMax.from(mugshot, 1, {rotation:-45, width: "600px"});
+
+$("#form-check").hide();
 
 }); // Document ready

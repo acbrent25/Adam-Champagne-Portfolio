@@ -13,7 +13,13 @@ $(function () {
             // if the validator does not prevent form submit
             if (!e.isDefaultPrevented()) {
                 var url = "contact.php";
-    
+                var formCheck = $("#form-check");
+                
+                if ( formCheck == "" ) {
+                    return false;
+                } else {
+
+                
                 // POST values in the background the the script URL
                 $.ajax({
                     type: "POST",
@@ -39,6 +45,8 @@ $(function () {
                         }
                     }
                 });
+
+            }
                 return false;
             }
         })
