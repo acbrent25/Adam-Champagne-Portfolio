@@ -1,3 +1,3 @@
 # Adam Champagne's Portfolio Of Digital Print Work
 
-<a href="http://g.recordit.co/ktBlfmJJhu.gif"><img src="http://g.recordit.co/ktBlfmJJhu.gif"></a>
+<img src="https://github.com/acbrent25/adamchampagne/blob/master/ktBlfmJJhu.gif?raw=true">
